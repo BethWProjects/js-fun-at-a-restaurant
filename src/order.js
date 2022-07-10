@@ -23,11 +23,13 @@ function listItems(deliveryOrders) {
   return items.join(", ");
 }
 
-function searchOrder(deliveryOrders) {
-  for (var i = 0; deliveryOrders.length; i++) {
-    if (deliveryOrders.includes[i])
-    return deliveryOrders
-}
+function searchOrder(deliveryOrders, item) {
+  var result = false
+  for (var i = 0; i < deliveryOrders.length; i++) {
+    if (deliveryOrders[i].item.includes(item)) {
+    result = true
+}}
+    return result
 }
 
 module.exports = {
